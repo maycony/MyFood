@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MyFood</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav_header">
+
+            <!-- Div do lado esquerdo -->
+            <div class="nav_left">
+                <div class="nav_logo">
+                    <h1>MyFood</h1>
+                </div>
+                <div class="links_left">
+                    <ul>
+                        <li><a class="link_ul" href="#">Início</a></li>
+                        <li><a class="link_ul" href="#">Restaurante</a></li>
+                        <li><a class="link_ul" href="#">Mercados</a></li>
+                        <li><a class="link_ul" href="#">Bebidas</a></li>
+                    </ul>
+
+                    <!-- Barra de pesquisar no meio -->
+                    <form>
+                        <div class="inpt_search_logo">
+                            <input class="search_inpt" type="search" name="search" id="search" placeholder="Busque por Doce, Salgado, Refrigerante...">
+                        </div>
+                    </form>
+
+                    <!-- Div do lado direito -->
+                    <div class="nav_rigth">
+                        <div class="btn_register">
+                            <button class="register_btn" type="button">Criar Conta</button>
+                        </div>
+                        <div class="btn_login">
+                            <button class="login_btn" type="button">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Categorias -->
+    <section class="category">
+        <ul>
+            <li class="li_category">
+                <img src="/icons/restaurante.png" alt="Categoria Restaurante">
+                <p>Restaurante</p>
+            </li>
+
+            <li class="li_category">
+                <img src="/icons/mercado.png" alt="Categoria Mercado">
+                <p>Mercados</p>
+            </li>
+
+            <li class="li_category">
+                <img src="/icons/bebidas.png" alt="Categoria Bebidas">
+                <p>Bebidas</p>
+            </li>    
+        </ul>
+    </section>
+
+    <!-- Banners -->
+    <section class="banners">
+        <div class="banner_img">
+            <img src="/img/1.jpg" alt="">
+        </div>
+        
+        <div class="banner_img">
+            <img src="/img/2.jpg" alt="">
+        </div>
+
+        <div class="banner_img">
+            <img src="/img/3.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- texto antes dos cards de mercado -->
+    <div class="text_cards_market">
+        <h2>Mercados próximo a você</h2>
+        <a href="#">Ver mais</a>
+    </div>
+
+    <!-- cards mercados proximos -->
+    <section class="cards_market">
+        <div class="box_market">
+            <img src="img/mercado-1.png" alt="">
+            <div class="box_description_market">
+                <h4>Mercado Norte</h4>
+                <div class="flex_description_market">
+                    <ul>
+                        <li id="avaliation_star"><img src="/icons/star_1828884.png" alt=""> <p>4.5</p></li>
+                        <li>Mercado</li>
+                        <li>2.5 km</li>
+                    </ul>
+                </div>
+                <div class="flex_description_market_2">
+                    <ul>
+                        <li id="remove_ball_list">132-142 min</li>
+                        <li>R$ 11,99</li>
+                    </ul>
+                </div>
+            </div>     
+        </div>
+
+        <div class="box_market">
+            <img src="img/mercado-2.png" alt="">
+            <div class="box_description_market">
+                <h4>Mercado Norte</h4>
+                <div class="flex_description_market">
+                    <ul>
+                        <li id="avaliation_star"><img src="/icons/star_1828884.png" alt=""> <p>4.5</p></li>
+                        <li>Mercado</li>
+                        <li>2.5 km</li>
+                    </ul>
+                </div>
+                <div class="flex_description_market_2">
+                    <ul>
+                        <li id="remove_ball_list">132-142 min</li>
+                        <li>R$ 11,99</li>
+                    </ul>
+                </div>
+            </div>     
+        </div>
+
+        <div class="box_market">
+            <img src="img/mercado-3.png" alt="">
+            <div class="box_description_market">
+                <h4>Mercado Norte</h4>
+                <div class="flex_description_market">
+                    <ul>
+                        <li id="avaliation_star"><img src="/icons/star_1828884.png" alt=""> <p>4.5</p></li>
+                        <li>Mercado</li>
+                        <li>2.5 km</li>
+                    </ul>
+                </div>
+                <div class="flex_description_market_2">
+                    <ul>
+                        <li id="remove_ball_list">132-142 min</li>
+                        <li>R$ 11,99</li>
+                    </ul>
+                </div>
+            </div>     
+        </div>
+
+        <div class="card_icon_arrow">
+            <img src="/icons/arrow.png" alt="">
+        </div>
+    </section>
+</body>
+</html>

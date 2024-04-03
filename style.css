@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --color_principal: #679c59;
+    --color_secundario: #427a35;
+    --border: #b2dea0;
+    --color_text: #000;
+    --color_text_secundario: #747474;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #74747442;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Div do lado esquerdo */
+.nav_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav_logo {
+    color: var(--color_principal);
+    font-size: 1.3rem;
+}
+
+.links_left {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #000000;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "  ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin-top: 3px;
+}
+
+
+
+.links_left ul {
+    display: flex;
+}
+
+.links_left ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.links_left ul li a {
+    color: var(--color_text_secundario);
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.link_ul:hover {
+    border-bottom: 1px solid var(--color_secundario);
+}
+
+/* barra de pesquisar no meio */
+.search_inpt {
+    width: 500px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 3px;
+    outline: none;
+    background-color: #dadadab1;
+    border: none;
+    font-size: 16px;
+    font-weight:350;
+}
+
+.search_inpt:focus {
+    border: 2px solid var(--border);
+}
+
+/* botao do lado esquerdo, criar conta e login */
+.nav_rigth {
+    display: flex;
+    gap: 25px;
+}
+
+.register_btn {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color_principal);
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.register_btn:hover {
+    background-color: #44a823bc;
+    color: #ffffff;
+}
+
+.login_btn {
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background-color: #fff;
+    color: var(--color_principal);
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.login_btn:hover {
+    background-color: var(--color_principal);
+    color: #fff;
+}
+
+
+/* categorias */
+.category {
+    display: flex;
+    justify-content: center;
+}
+
+.category ul {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.category ul li {
+    text-align: center;
+    color: #747474;
+    transition: 0.2s;
+}
+
+.category ul li:hover {
+    text-align: center;
+    color: #747474;
+    border: 1px solid #74747429;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9aff7e1c;
+    cursor: pointer;
+}
+
+
+.li_category img {
+    width: 70px;
+    border-radius: 10px;
+    background-color: #9aff7e2c;
+    padding: 10px;
+    width: 100px;
+}
+
+/* banners */
+.banners {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.banner_img img {
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* texto antes dos cards de mercado */
+.text_cards_market {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 600px;
+    padding: 0px;
+}
+
+.text_cards_market h2 {
+    font-weight: 400;
+    color: #000000bd;
+}
+
+.text_cards_market a {
+    color: #70b860;
+}
+
+/* cards mercados proximos */
+.cards_market {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box_market {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.box_market:hover {
+    border: 1px solid #7474744a;
+    border-radius: 10px;
+    background-color: #9aff7e1c;
+}
+
+.box_market img {
+    width: 130px;
+}
+
+.box_description_market {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box_description_market h4 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #679c59;
+}
+
+.flex_description_market ul {
+    display: flex;
+    gap: 30px;
+    color: #000000a3;
+    font-size: 14px;
+}
+
+#avaliation_star {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#avaliation_star img {
+    width: 15px;
+    object-fit: cover;
+}
+
+#remove_ball_list {
+    list-style: none;
+}
+
+.flex_description_market_2 ul {
+    display: flex;
+    gap: 30px;
+    color: #000000a3;
+    font-size: 14px;
+}
+
+.card_icon_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card_icon_arrow img {
+    width: 20px;
+}
+
+/* Responsividade */ 
+
+@media screen and (min-width:  768px) and (max-width: 992px) { /* TABLET */ 
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+        /* Header */
+        .nav_logo {
+            font-size: 1.2rem;
+        }
+    
+        .search_inpt {
+            width: 200px;
+            font-size: 14px;
+            padding: 20px 10px;
+        }
+    
+        .register_btn {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    
+        .login_btn {
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+    
+        /* Categorias */
+    
+        .li_category img {
+            width: 70px;
+        }
+    
+        .li_category p {
+            font-size: 16px
+        }
+    
+        /* Banners */
+    
+        .banner_img img {
+            width: 275px;
+            height: 175px;
+        }
+    
+        .text_cards_market {
+            gap: 500px;
+        }
+    
+        .text_cards_market h2 {
+            font-size: 20px;
+        }
+    
+        /* cards mercados proximos */
+    
+        .cards_market {
+            gap: 20px;
+        }
+    
+        .box_market img {
+            width: 100px;
+        }
+    
+        .box_description_market h4 {
+            font-size: 17px;
+        }
+    
+        .flex_description_market ul {
+            font-size: 13px;
+        }
+    
+        #avaliation_star img {
+            width: 12px;
+        }
+    
+        .flex_description_market_2 ul {
+            font-size: 13px;
+        }
+    
+        .card_icon_arrow img {
+            width: 12px;
+        }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */ 
+        /* Header */
+        .nav_logo {
+            font-size: 1.2rem;
+        }
+    
+        .search_inpt {
+            width: 200px;
+            font-size: 14px;
+            padding: 20px 10px;
+        }
+    
+        .register_btn {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+    
+        .login_btn {
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+    
+        /* Categorias */
+    
+        .li_category img {
+            width: 70px;
+        }
+    
+        .li_category p {
+            font-size: 16px
+        }
+    
+        /* Banners */
+    
+        .banner_img img {
+            width: 275px;
+            height: 175px;
+        }
+    
+        .text_cards_market {
+            gap: 500px;
+        }
+    
+        .text_cards_market h2 {
+            font-size: 20px;
+        }
+    
+        /* cards mercados proximos */
+    
+        .cards_market {
+            gap: 20px;
+        }
+    
+        .box_market img {
+            width: 100px;
+        }
+    
+        .box_description_market h4 {
+            font-size: 17px;
+        }
+    
+        .flex_description_market ul {
+            font-size: 13px;
+        }
+    
+        #avaliation_star img {
+            width: 12px;
+        }
+    
+        .flex_description_market_2 ul {
+            font-size: 13px;
+        }
+    
+        .card_icon_arrow img {
+            width: 12px;
+        }
+}
